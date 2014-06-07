@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Treehouse</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'treehouse/style.css' %}">
+  </head>
+  <body>
+    <div id="wrap">
+    <div id="menu">
+      <img src="{% static 'treehouse/logo.png' %}" alt="logo" width="200px" />
+      <ul id="menu-list">
+        <li><a href="act.php">Act</a></li>
+        <li><a href="books.php">Books</a></li>
+        <li><a href="community.php">Community</a></li>
+        <li><a href="reflect.php">Reflect</a></li>
+      </ul>
+    </div>
+    <div id="main">
+        {% block content %}{% endblock %}
+    </div>
+    </div>
+  </body>
+</html>

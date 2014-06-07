@@ -1,0 +1,52 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+#wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 850px;
+}
+#intro {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#menu {
+  float: left;
+  width: 250px;
+}
+
+#main {
+  float: right;
+  width: 600px;
+}
+
+#menu-list {
+  list-style-type: none;
+  width: 120px;
+  padding: 0;
+  margin-left: 35px;
+  text-align: center;
+}
+
+#menu-list li {
+  margin-bottom: 5px;
+  background: #e5d3a9;
+  font-size: 1.2em;
+}
+
+a, a:visited {
+  color: #5e4d25;
+  text-decoration: none;
+}
+
+.reflection {
+  margin: 5px;
+  background-color: #e5d3a9;
+}
+
+.reflection .title {
+  font-weight: bold;
+}
