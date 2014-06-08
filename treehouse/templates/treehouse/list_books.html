@@ -1,0 +1,10 @@
+{% extends "treehouse/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  {% for book in books %}
+  <h2>{{ book.author }} - {{ book.title }}</h2>
+  <img src="{% static "treehouse/books/" %}{{ book.image_filename }}" alt="{{ book.abbreviation }}">
+  {% endfor %}
+{% endblock %}
+
