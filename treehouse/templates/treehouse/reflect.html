@@ -1,0 +1,13 @@
+{% extends "treehouse/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div id="journal">
+  {% for reflection in reflections %}
+    <div class="reflection">
+      <p>{{ reflection.contents }}</p>
+    </div>
+  {% endfor %}
+  </div>
+{% endblock %}
+

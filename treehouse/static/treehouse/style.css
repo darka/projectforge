@@ -43,8 +43,11 @@ a, a:visited {
 }
 
 .reflection {
-  margin: 5px;
+  margin: 15px;
+  padding: 1px;
+  width: 300px;
   background-color: #e5d3a9;
+  color: white;
 }
 
 .reflection .title {

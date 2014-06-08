@@ -6,6 +6,7 @@ class Book(models.Model):
   author = models.CharField(max_length=200)
   title = models.CharField(max_length=200)
   abbreviation = models.CharField(max_length=200, default='')
+  outline = models.TextField(default='')
   image_filename = models.CharField(max_length=200)
 
   def __str__(self):

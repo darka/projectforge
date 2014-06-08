@@ -4,7 +4,8 @@
 {% block content %}
   {% for book in books %}
   <h2>{{ book.author }} - {{ book.title }}</h2>
-  <img src="{% static "treehouse/books/" %}{{ book.image_filename }}" alt="{{ book.abbreviation }}">
+  <img src="{% static "treehouse/books/" %}{{ book.image_filename }}" width="200px" alt="{{ book.abbreviation }}">
+  <p>{{ book.outline }}</p>
   {% endfor %}
 {% endblock %}
 

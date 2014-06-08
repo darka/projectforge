@@ -1,0 +1,14 @@
+{% extends "treehouse/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div id="user_feed">
+  {% for post in posts %}
+    <div class="user">
+      <p class="name">{{ post.user.username }}</p>
+      <p>{{ post.contents }}</p>
+    </div>
+  {% endfor %}
+  </div>
+{% endblock %}
+

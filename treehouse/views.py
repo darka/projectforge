@@ -14,11 +14,18 @@ def book(request, object_id):
   context = {'book': book}
   return render(request, 'treehouse/book.html', context)
 
-def reflection(request):
-  pass
+def reflections(request):
+  reflections = Reflection.objects.filter()
+  context = {'reflections': reflections}
+  return render(request, 'treehouse/reflect.html', context)
 
-def action(request):
-  pass
+def actions(request):
+  actions = Action.objects.filter()
+  context = {'actions': actions}
+  return render(request, 'treehouse/actions.html', context)
 
-def post(request):
-  pass
+def community(request):
+  posts = Post.objects.filter()
+  context = {'posts': posts}
+  return render(request, 'treehouse/community.html', context)
+

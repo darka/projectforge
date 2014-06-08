@@ -1,0 +1,13 @@
+{% extends "treehouse/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div id="actions">
+  <ul>
+  {% for action in actions %}
+    <li>{{ action.contents }}</li>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}
+
